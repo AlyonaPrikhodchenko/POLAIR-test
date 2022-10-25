@@ -1,0 +1,28 @@
+.logo {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.logo__image {
+  display: block;
+
+  @media (min-width: $tablet) {
+    width: 200px;
+    height: 32px;
+  }
+}
+
+.logo__text {
+  display: none;
+  width: 360px;
+  margin: 0;
+  margin-left: 24px;
+
+  @include fontGolos(400, 11px, 18px, $color-grey);
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}

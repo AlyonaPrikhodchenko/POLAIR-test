@@ -1,0 +1,98 @@
+.user-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+
+  @media (min-width: $tablet) {
+    width: 90px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 242px;
+  }
+}
+
+.user-menu__feedback-link {
+  position: relative;
+  display: none;
+  padding: 10px 0 10px 23px;
+
+  @include fontGolos(400, 14px, 22px, $color-brand);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 17px;
+    height: 17px;
+    background-image: url("../img/icons/mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.user-menu__select-lang {
+  display: none;
+
+  border: none;
+  appearance: none;
+
+  @include fontGolos(400, 14px, 22px, $color-brand);
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.user-menu__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 1px solid $color-accent;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @media (min-width: $tablet) {
+    width: 30px;
+    height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    &--burger {
+      display: none;
+    }
+  }
+}
+
+.user-menu__icon {
+  @media (min-width: $tablet) {
+    &--search {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
