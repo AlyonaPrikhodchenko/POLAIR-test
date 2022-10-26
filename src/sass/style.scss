@@ -1,12 +1,18 @@
+// Глобальные стили, миксины, переменные, шрифты
 @import "./global/fonts.scss";
 @import "./global/variables.scss";
 @import "./global/mixin.scss";
 @import "./global/global.scss";
 @import "./global/visually-hidden.scss";
+
+// Шаблоны элементов, повторяющихся в разных местах макета
 @import "./patterns/container.scss";
 @import "./patterns/reset-list.scss";
 @import "./patterns/title.scss";
 @import "./patterns/button.scss";
+@import "./patterns/page-link.scss";
+
+// БЭМ-блоки
 @import "./blocks/header.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/user-menu.scss";
@@ -14,3 +20,4 @@
 @import "./blocks/navigation.scss";
 @import "./blocks/main.scss";
 @import "./blocks/swiper.scss";
+@import "./blocks/products.scss";
