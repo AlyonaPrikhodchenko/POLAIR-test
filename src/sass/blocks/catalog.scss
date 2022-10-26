@@ -1,0 +1,54 @@
+.catalog {
+  padding: 160px 0 48px;
+
+  background-image: url("../img/background/catalog-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/catalog-bg@2x.jpg");
+  }
+
+  @media (min-width: $tablet) {
+    background-image: url("../img/background/catalog-bg-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/catalog-bg-desktop@2x.jpg");
+    }
+  }
+}
+
+.catalog__wrapper {
+  padding: 24px 0;
+  background-color: $color-light-bg;
+  max-width: 472px;
+
+  @media (min-width: $desktop) {
+    padding: 40px 0;
+  }
+}
+
+.catalog__content {
+  width: 88.88%;
+  margin: 0 auto;
+
+  @media (min-width: $desktop) {
+    width: 83%;
+  }
+}
+
+.catalog__title {
+  margin-bottom: 16px;
+}
+
+.catalog__text {
+  margin: 0;
+  margin-bottom: 40px;
+
+  @include fontGolos(400, 15px, 26px, $color-medium-dark);
+}
+
+.catalog__button {
+  width: 219px;
+}
