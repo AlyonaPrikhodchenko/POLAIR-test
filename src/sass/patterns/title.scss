@@ -2,4 +2,9 @@
   margin: 0;
 
   @include fontGolos(600, 27px, 31px, $color-brand);
+
+  @media (min-width: $desktop) {
+    font-size: 29px;
+    line-height: 34px;
+  }
 }
