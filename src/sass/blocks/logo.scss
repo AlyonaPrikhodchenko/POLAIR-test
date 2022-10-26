@@ -20,7 +20,7 @@
   margin: 0;
   margin-left: 24px;
 
-  @include fontGolos(400, 11px, 18px, $color-grey);
+  @include fontGolos(400, 11px, 18px, $color-gray);
 
   @media (min-width: $desktop) {
     display: block;

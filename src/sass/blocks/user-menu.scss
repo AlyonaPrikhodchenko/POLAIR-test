@@ -33,6 +33,19 @@
     background-position: center;
   }
 
+  &:focus-visible {
+    outline: 1px solid $color-accent;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   @media (min-width: $desktop) {
     display: block;
   }
@@ -43,8 +56,23 @@
 
   border: none;
   appearance: none;
+  outline: none;
+  cursor: pointer;
 
   @include fontGolos(400, 14px, 22px, $color-brand);
+
+  &:focus-visible {
+    outline: 1px solid $color-accent;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (min-width: $desktop) {
     display: block;

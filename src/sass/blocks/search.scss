@@ -13,10 +13,17 @@
 
 .search__input {
   width: 100%;
-  padding: 10px;
+  padding: 20px;
+
+  @include fontGolos(400, 18px, 22px, $color-dark);
   border: none;
-  box-shadow: 5px 5px 5px 5px $color-grey;
+  box-shadow: 5px 5px 5px 5px $color-gray;
   outline: none;
+
+  &::placeholder {
+    @include fontGolos(400, 18px, 22px, $color-dark);
+    opacity: 0.5;
+  }
 
   &:hover {
     opacity: 0.8;

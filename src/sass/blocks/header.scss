@@ -1,12 +1,11 @@
 .header__top-menu {
-  position: relative;
-
   @media (min-width: $desktop) {
     border-bottom: 1px solid $color-border-light;
   }
 }
 
 .header__container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 16px 0 12px;
