@@ -1,0 +1,180 @@
+.swiper__slide {
+  height: auto;
+  padding: 24px 0 0;
+  background-image: linear-gradient(to bottom, $color-accent 33%, $color-gray-bg 33%);
+
+  @media (min-width: $tablet) {
+    padding: 40px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 80px 0 0;
+    background-image: linear-gradient(to left, $color-accent 33%, $color-gray-bg 33%);
+  }
+}
+
+.swiper__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $desktop) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.swiper__pictures {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 40px;
+  }
+}
+
+.swiper__img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  filter: drop-shadow(4px 8px 24px rgba(0, 0, 0, 0.2)) drop-shadow(16px 28px 64px rgba(0, 0, 0, 0.16));
+
+  @media (min-width: $tablet) {
+    width: 450px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 588px;
+  }
+}
+
+.swiper__content {
+  position: relative;
+  padding-top: 32px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 126px;
+    height: 24px;
+    background-image: url("../img/icons/set-icons-slider.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @media (min-width: $tablet) {
+    padding-top: 46px;
+
+    &::before {
+      width: 160px;
+      height: 35px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 486px;
+    padding-top: 56px;
+
+    &::before {
+      width: 208px;
+      height: 40px;
+    }
+  }
+}
+
+.swiper__title {
+  margin-bottom: 8px;
+  font-size: 23px;
+  line-height: 25px;
+
+  @media (min-width: $tablet) {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 33px;
+    line-height: 38px;
+    margin-bottom: 16px;
+  }
+}
+
+.swiper__text {
+  margin: 0;
+  margin-bottom: 32px;
+
+  @include fontGolos(400, 15px, 22px, $color-medium-dark);
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 29px;
+    margin-bottom: 56px;
+  }
+}
+
+.swiper__button {
+  width: 160px;
+  color: $color-brand;
+  background-color: transparent;
+  border-color: $color-brand;
+
+  &:focus-visible {
+    outline: 1px solid $color-accent;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-brand;
+    transition: all 0.3s;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @media (min-width: $desktop) {
+    width: 200px;
+  }
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  bottom: 43px;
+  left: 87.5%;
+  transform: translateX(-87.5%);
+
+  @media (min-width: $desktop) {
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: #d0d0d0;
+
+  &:focus-visible {
+    outline: 1px solid $color-accent;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    background-color: $color-brand;
+    transition: all 0.3s;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.swiper-pagination-bullet-active-main {
+  background-color: $color-brand;
+}

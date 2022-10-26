@@ -3,12 +3,31 @@
   align-items: center;
   width: auto;
   height: auto;
+
+  &[href]:focus-visible {
+    outline: 1px solid $color-accent;
+    outline-offset: 2px;
+  }
+
+  &[href]:hover {
+    opacity: 0.8;
+    transition: all 0.3s;
+  }
+
+  &[href]:active {
+    opacity: 0.5;
+  }
 }
 
 .logo__image {
   display: block;
 
   @media (min-width: $tablet) {
+    width: 150px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop) {
     width: 200px;
     height: 32px;
   }
