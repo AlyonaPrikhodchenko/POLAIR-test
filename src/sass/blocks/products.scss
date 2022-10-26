@@ -13,8 +13,8 @@
   gap: 36px;
 
   @media (min-width: $desktop) {
-    grid-template-columns: repeat(2, auto);
-    gap: 121px;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
   }
 }
 
@@ -39,9 +39,9 @@
   }
 
   @media (min-width: $desktop) {
-    grid-template-columns: repeat(4, 200px);
-    align-items: start;
+    grid-template-columns: repeat(auto-fill, 200px);
     gap: 40px;
+    justify-content: end;
   }
 }
 
