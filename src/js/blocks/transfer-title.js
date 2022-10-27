@@ -1,4 +1,4 @@
-let mediaQueries = window.matchMedia('(min-width: 768px)');
+let mediaQueries = window.matchMedia('(min-width: 1024px)');
 const footerProducts = document.querySelector('.js-products');
 const footerTitleProducts = document.querySelector('.js-title');
 const footerContent = document.querySelector('.js-content');
