@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Интернет-магазин холодильного оборудования">
   <title>POLAIR</title>
   <link rel="icon" href="./favicon32.ico">
   <link rel="icon" href="./img/favicons/favicon-152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
-  <link rel="manifest" href="./manifest.webmanifest">
+  <!-- <link rel="manifest" href="./manifest.webmanifest"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -111,7 +112,7 @@
   </header>
 
   <main class="main">
-    <section class="main__swiper swiper">
+    <section class="main__swiper swiper" id="swiperIntro">
       <ul class="swiper__wrapper swiper-wrapper reset-list">
         <li class="swiper__slide swiper-slide">
           <div class="swiper__container container">
@@ -132,7 +133,7 @@
             </div>
           </div>
         </li>
-        <li class="swiper__slide swiper-slide">2
+        <li class="swiper__slide swiper-slide">
           <div class="swiper__container container">
             <div class="swiper__pictures">
               <picture>
@@ -314,7 +315,7 @@
             <source type="image/webp" srcset="./img/content/berries.webp 1x, ./img/content/berries@2x.webp 2x">
 
             <source media="(min-width: 768px)" srcset="./img/content/berries-desktop.jpg 1x, ./img/content/berries-desktop@2x.jpg 2x">
-            <img class="about__img" src="./img/content/berries.jpg" srcset="./img/berries/berries@2x.jpg" width="320" height="225" alt="Ягоды в тарелке на сером фоне.">
+            <img class="about__img" src="./img/content/berries.jpg" srcset="./img/berries/berries@2x.jpg" width="320" height="225" alt="Ягоды в тарелке на сером фоне." loading="lazy">
           </picture>
         </div>
 
@@ -343,7 +344,7 @@
                 <source type="image/webp" srcset="./img/content/table-configurator.webp 1x, ./img/content/table-configurator@2x.webp 2x">
 
                 <source media="(min-width: 768px)" srcset="./img/content/table-configurator-desktop.png 1x, ./img/content/table-configurator-desktop@2x.png 2x">
-                <img class="card-product__img" src="./img/content/table-configurator.png" srcset="./img/berries/table-configurator@2x.png" width="288" height="230" alt="Конфигуратор холодильных столов.">
+                <img class="card-product__img" src="./img/content/table-configurator.png" srcset="./img/berries/table-configurator@2x.png" width="288" height="230" alt="Конфигуратор холодильных столов." loading="lazy">
               </picture>
             </div>
             <div class="card-product__wrapper">
@@ -362,7 +363,7 @@
                 <source type="image/webp" srcset="./img/content/machine-configurator.webp 1x, ./img/content/machine-configurator@2x.webp 2x">
 
                 <source media="(min-width: 768px)" srcset="./img/content/machine-configurator-desktop.png 1x, ./img/content/machine-configurator-desktop@2x.png 2x">
-                <img class="card-product__img" src="./img/content/machine-configurator.png" srcset="./img/berries/machine-configurator@2x.png" width="288" height="230" alt="Конфигуратор холодильных машин.">
+                <img class="card-product__img" src="./img/content/machine-configurator.png" srcset="./img/berries/machine-configurator@2x.png" width="288" height="230" alt="Конфигуратор холодильных машин." loading="lazy">
               </picture>
             </div>
             <div class="card-product__wrapper">
@@ -382,7 +383,7 @@
       <div class="news__container container">
         <div class="news__header">
           <h2 class="news__title title">Новости</h2>
-          <a class="news__link page-link">Все новости</a>
+          <a class="news__link page-link" href="#">Все новости</a>
         </div>
 
         <ul class="news__list reset-list">
@@ -393,7 +394,7 @@
                 <source type="image/webp" srcset="./img/content/news-style.webp 1x, ./img/content/news-style@2x.webp 2x">
 
                 <source media="(min-width: 1024px)" srcset="./img/content/news-style-desktop.png 1x, ./img/content/news-style-desktop@2x.png 2x">
-                <img class="news__item-img" src="./img/content/news-style.jpg" srcset="./img/content/news-style@2x.jpg" width="288" height="230" alt="Конфигуратор холодильных столов.">
+                <img class="news__item-img" src="./img/content/news-style.jpg" srcset="./img/content/news-style@2x.jpg" width="288" height="230" alt="Изображение обновления фирменного стиля." loading="lazy">
               </picture>
             </div>
             <div class="news__item-content">
@@ -414,7 +415,7 @@
                 <source type="image/webp" srcset="./img/content/news-brand.webp 1x, ./img/content/news-brand@2x.webp 2x">
 
                 <source media="(min-width: 1024px)" srcset="./img/content/news-brand-desktop.png 1x, ./img/content/news-brand-desktop@2x.png 2x">
-                <img class="news__item-img" src="./img/content/news-brand.jpg" srcset="./img/content/news-brand@2x.jpg" width="288" height="230" alt="Конфигуратор холодильных столов.">
+                <img class="news__item-img" src="./img/content/news-brand.jpg" srcset="./img/content/news-brand@2x.jpg" width="288" height="230" alt="Изображение представления нового бренда." loading="lazy">
               </picture>
             </div>
             <div class="news__item-content">
@@ -435,7 +436,7 @@
                 <source type="image/webp" srcset="./img/content/news-style.webp 1x, ./img/content/news-style@2x.webp 2x">
 
                 <source media="(min-width: 1024px)" srcset="./img/content/news-style-polair.png 1x, ./img/content/news-style-polair@2x.png 2x">
-                <img class="news__item-img" src="./img/content/news-style.jpg" srcset="./img/content/news-style@2x.jpg" width="288" height="230" alt="Конфигуратор холодильных столов.">
+                <img class="news__item-img" src="./img/content/news-style.jpg" srcset="./img/content/news-style@2x.jpg" width="288" height="230" alt="Изображение обновления фирменного стиля." loading="lazy">
               </picture>
             </div>
             <div class="news__item-content">
@@ -461,6 +462,47 @@
             <p class="catalog__text">Широкий ассортимент оборудования для предприятий общественного питания и торговли</p>
             <a class="catalog__button button" href="./files/catalog.pdf" download>Скачать PDF-каталог</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main__brands brands">
+      <div class="brands__container container">
+        <h2 class="brands__title title">Наши бренды</h2>
+
+        <div class="brands__wrapper swiper" id="swiperBrands">
+          <ul class="brands__list reset-list swiper-wrapper">
+            <li class="brands__item swiper-slide">
+              <img class="brands__logo" src="./img/content/brands-logo/carboma-logo.svg" width="180" height="48" alt="Логотип Carboma." loading="lazy">
+              <p class="brands__text">Витрины для кондитерских, экспресс кофеен, гастробаров и продуктовых магазинов</p>
+            </li>
+            <li class="brands__item swiper-slide">
+              <img class="brands__logo" src="./img/content/brands-logo/dazzl-logo.svg" width="180" height="48" alt="Логотип Dazzle." loading="lazy">
+              <p class="brands__text">Профессиональное холодильное оборудование для ритейла</p>
+            </li>
+            <li class="brands__item brands__item--primary swiper-slide">
+              <img class="brands__logo brands__logo--primary" src="./img/content/brands-logo/polair-group-logo.svg" width="180" height="48" alt="Логотип Polair group." loading="lazy">
+              <p class="brands__text">Лидер в производстве профессионального оборудования для торговли, общественного питания и кухни</p>
+            </li>
+            <li class="brands__item swiper-slide">
+              <img class="brands__logo" src="./img/content/brands-logo/polair-plus-logo.svg" width="180" height="48" alt="Логотип Polair+." loading="lazy">
+              <p class="brands__text">Решения по хранению для медицинских учреждений и организаций</p>
+            </li>
+            <li class="brands__item swiper-slide">
+              <img class="brands__logo" src="./img/content/brands-logo/radax-logo.svg" width="180" height="48" alt="Логотип Radax." loading="lazy">
+              <p class="brands__text">Профессиональное оборудование для кухни</p>
+            </li>
+            <li class="brands__item swiper-slide">
+              <img class="brands__logo" src="./img/content/brands-logo/frosteco-logo.svg" width="180" height="48" alt="Логотип Frosteco." loading="lazy">
+              <p class="brands__text">Системы стеклянных дверей для холодильного оборудования и стеллажи для ритейла</p>
+            </li>
+            <li class="brands__item swiper-slide">
+              <img class="brands__logo" src="./img/content/brands-logo/rada-logo.svg" width="180" height="48" alt="Логотип Rada." loading="lazy">
+              <p class="brands__text">Профессиональное оборудование для предприятий торговли и HoReCa</p>
+            </li>
+          </ul>
+
+          <div class="brands__pagination swiper-pagination"></div>
         </div>
       </div>
     </section>

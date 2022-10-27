@@ -50,5 +50,7 @@
 }
 
 .catalog__button {
-  width: 219px;
+  @media (min-width: $tablet) {
+    width: 219px;
+  }
 }

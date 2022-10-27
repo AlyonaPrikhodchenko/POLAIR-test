@@ -1,5 +1,5 @@
-const initSwiper = () => {
-  new Swiper('.swiper', {
+const initSwiperSlider = () => {
+  new Swiper('#swiperIntro', {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -10,4 +10,4 @@ const initSwiper = () => {
   });
 }
 
-export {initSwiper};
+export {initSwiperSlider};
