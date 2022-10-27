@@ -48,6 +48,12 @@
     mask-repeat: no-repeat;
   }
 
+  &--accordion {
+    &::before {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
   @media (min-width: $desktop) {
     &::before {
       display: none;
@@ -85,10 +91,14 @@
   grid-template-columns: 1fr;
   gap: 12px;
 
+  &--sub {
+    gap: 10px;
+  }
+
   @media (min-width: $desktop) {
     &--primary {
       grid-template-columns: auto 200px 136px;
-      gap: 162px;
+      justify-content: space-between;
     }
 
     &--sub {
@@ -127,6 +137,7 @@
 
 .footer__link {
   display: block;
+  padding-bottom: 12px;
   border-bottom: 1px solid $color-border-footer;
 
   @include fontGolos(400, 14px, 22px, $color-border-light);
@@ -154,6 +165,7 @@
   }
 
   @media (min-width: $desktop) {
+    padding: 0;
     border: none;
 
     &--primary {
@@ -165,6 +177,10 @@
 
 .footer__bottom-menu {
   padding-top: 24px;
+
+  @media (min-width: $desktop) {
+    padding-top: 88px;
+  }
 }
 
 .footer__links {

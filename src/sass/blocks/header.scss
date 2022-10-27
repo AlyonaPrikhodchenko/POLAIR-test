@@ -1,6 +1,7 @@
 .header__top-menu {
   @media (min-width: $desktop) {
     border-bottom: 1px solid $color-border-light;
+    padding-bottom: 7px;
   }
 }
 
@@ -9,5 +10,9 @@
   display: flex;
   justify-content: space-between;
   padding: 16px 0 12px;
+
+  @media (min-width: $desktop) {
+    padding: 20px 0 12px;
+  }
 }
 

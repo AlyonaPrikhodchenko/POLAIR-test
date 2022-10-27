@@ -13,9 +13,12 @@
   padding: 0 16px;
   text-align: center;
 
-  @include fontGolos(400, 18px, 30px, $color-white);
+  @include fontGolos(400, 18px, 29px, $color-white);
 
   @media (min-width: $desktop) {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 101px;
     font-size: 23px;
     line-height: 30px;
   }
@@ -78,8 +81,8 @@
   &--heart {
     &::before {
       left: 77px;
-      width: 79px;
-      height: 80px;
+      width: 70px;
+      height: 70px;
       background-image: url("../img/icons/icon-heart.svg");
 
       @media (min-width: $desktop) {
@@ -93,9 +96,9 @@
 
   &--circle {
     &::before {
-      left: 148px;
-      width: 79px;
-      height: 80px;
+      left: 135px;
+      width: 65px;
+      height: 65px;
       background-image: url("../img/icons/icon-circle.svg");
 
       @media (min-width: $desktop) {
@@ -110,7 +113,7 @@
   &--diamond {
     &::before {
       left: 75px;
-      width: 79px;
+      width: 75px;
       height: 80px;
       background-image: url("../img/icons/icon-diamond.svg");
 
@@ -122,7 +125,6 @@
       }
     }
   }
-
 
   @media (min-width: $desktop) {
     align-items: stretch;
@@ -139,6 +141,7 @@
   }
 
   @media (min-width: $desktop) {
+    margin-bottom: 10px;
     font-size: 51px;
     line-height: 56px;
   }

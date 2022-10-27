@@ -17,7 +17,7 @@
 
   @include fontGolos(400, 18px, 22px, $color-dark);
   border: none;
-  box-shadow: 5px 5px 5px 5px $color-gray;
+  box-shadow: 0 0 10px 1px $color-gray;
   outline: none;
 
   &::placeholder {

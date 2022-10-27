@@ -38,6 +38,7 @@
 
   @media (min-width: $desktop) {
     flex-direction: column;
+    padding-bottom: 10px;
   }
 }
 
@@ -49,7 +50,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 22px;
+    margin-bottom: 0;
   }
 }
 
@@ -84,6 +85,10 @@
 
 .news__item-header {
   margin-bottom: 10px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 15px;
+  }
 }
 
 .news__item-category {

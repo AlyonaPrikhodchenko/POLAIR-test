@@ -1,6 +1,10 @@
 .brands {
   padding: 46px 0 52px;
   background-color: $color-white;
+
+  @media (min-width: $desktop) {
+    padding: 66px 0 14px;
+  }
 }
 
 .brands__title {
@@ -13,7 +17,7 @@
 }
 
 .brands__list {
-  margin-bottom: 40px;
+  margin-bottom: 52px;
 
   @media (min-width: $tablet) {
     display: grid;
@@ -23,14 +27,16 @@
   }
 
   @media (min-width: $desktop) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 270px);
+    column-gap: 35px;
+    row-gap: 48px;
   }
 }
 
 .brands__item {
   width: 100%;
   height: auto;
-  padding: 0 16px;
+  padding: 0 15px;
   border-left: 1px solid $color-border-light;
 
   @media (min-width: $tablet) {
@@ -40,6 +46,10 @@
     &--primary {
       order: -1;
     }
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 14px;
   }
 }
 
@@ -57,6 +67,10 @@
       mask-image: none;
       filter: none;
     }
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 11px;
   }
 }
 

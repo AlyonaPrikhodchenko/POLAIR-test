@@ -13,9 +13,33 @@
   }
 }
 
+.user-menu__wrapper {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+
+  &--mobile {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    background-color: $color-white;
+    min-height: 100px;
+    max-width: 300px;
+    box-shadow: 0 0 10px 1px $color-gray;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+
 .user-menu__feedback-link {
   position: relative;
-  display: none;
   padding: 10px 0 10px 23px;
 
   @include fontGolos(400, 14px, 22px, $color-brand);
@@ -48,13 +72,11 @@
   }
 
   @media (min-width: $desktop) {
-    display: block;
+    margin-right: 32px;
   }
 }
 
 .user-menu__select-lang {
-  display: none;
-
   border: none;
   appearance: none;
   outline: none;
@@ -74,10 +96,6 @@
 
   &:active {
     opacity: 0.5;
-  }
-
-  @media (min-width: $desktop) {
-    display: block;
   }
 }
 

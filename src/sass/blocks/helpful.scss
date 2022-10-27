@@ -1,6 +1,10 @@
 .helpful {
   padding: 52px 0;
   background-color: $color-white;
+
+  @media (min-width: $desktop) {
+    padding: 52px 0 70px;
+  }
 }
 
 .helpful__container {
@@ -11,7 +15,7 @@
 }
 
 .helpful__header {
-  padding-bottom: 32px;
+  padding-bottom: 1px;
   margin-bottom: 16px;
 
   @media (min-width: $desktop) {
@@ -42,7 +46,7 @@
 
 .helpful__description {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 
   @include fontGolos(400, 15px, 26px, $color-medium-dark);
 }
