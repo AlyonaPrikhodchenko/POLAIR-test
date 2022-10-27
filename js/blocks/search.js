@@ -1,0 +1,1 @@
+const search=document.querySelector(".user-menu__button--search"),input=document.querySelector(".search"),mediaQuerySearch=window.matchMedia("(max-width: 1023px)"),openSearch=e=>{e.matches?search.addEventListener("click",(()=>{input.classList.toggle("search--hidden")})):input.classList.add("search--hidden")};export{openSearch,mediaQuerySearch};
