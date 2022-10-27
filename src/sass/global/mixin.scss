@@ -15,12 +15,3 @@
   font-weight: 700;
   color: $color;
 }
-
-@mixin fontAlegreya ($fs, $lh, $color) {
-  font-family: "Alegreya Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-size: $fs;
-  line-height: $lh;
-  font-weight: 700;
-  color: $color;
-}
