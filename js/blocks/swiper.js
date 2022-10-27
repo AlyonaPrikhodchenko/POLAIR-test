@@ -1,1 +1,0 @@
-const initSwiper=()=>{new Swiper(".swiper",{pagination:{el:".swiper-pagination",clickable:!0,dynamicBullets:!0},initialSlide:2})};export{initSwiper};

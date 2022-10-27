@@ -1,0 +1,1 @@
+const initSwiperSlider=()=>{new Swiper("#swiperIntro",{pagination:{el:".swiper-pagination",clickable:!0,dynamicBullets:!0},initialSlide:2})};export{initSwiperSlider};
